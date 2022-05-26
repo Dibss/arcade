@@ -60,3 +60,14 @@ ul li a{
   color: var(--text-color);
   font-size: 1.2rem;
 }
+
+.game-alert{
+  text-align: center;
+  margin: 1em 0;
+}
+
+.game-alert-message{
+  color: var(--text-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
