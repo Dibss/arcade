@@ -36,6 +36,14 @@ ul li a{
   color: var(--text-color);
 }
 
+nav{
+  margin-bottom: 6vh;
+}
+
+nav ul{
+  padding: 2vh;
+}
+
 /* GAME PAGE */
 .board{
   width: 100vw;
