@@ -13,15 +13,12 @@
   cursor: pointer;
 }
 
-#grid div{
+#grid .cell{
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 9rem;
-}
-
-.cell{
   height: var(--cell-size);
   width: var(--cell-size);
   border: 3px solid #fff;
