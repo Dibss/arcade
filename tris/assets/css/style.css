@@ -1,0 +1,28 @@
+:root{
+  --cell-size: 8vw;
+  --cell-gutter: 1em;
+}
+
+#grid{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+  height: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+  align-content: space-between;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#grid div{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+}
+
+.cell{
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border: 3px solid #fff;
+}
