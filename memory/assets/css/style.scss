@@ -1,0 +1,23 @@
+:root{
+  --cell-size: 8vw;
+  --cell-gutter: 1em;
+}
+
+#grid{
+  height: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+  width: calc((var(--cell-size) + var(--cell-gutter)) * 4);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  cursor: pointer;
+  .cell{
+    height: var(--cell-size);
+    width: var(--cell-size);
+    background-image: url('../img/back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+  }
+}

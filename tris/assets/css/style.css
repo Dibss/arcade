@@ -1,9 +1,9 @@
-:root{
+:root {
   --cell-size: 8vw;
   --cell-gutter: 1em;
 }
 
-#grid{
+#grid {
   display: flex;
   flex-wrap: wrap;
   width: calc((var(--cell-size) + var(--cell-gutter)) * 3);
@@ -12,8 +12,7 @@
   justify-content: space-between;
   cursor: pointer;
 }
-
-#grid .cell{
+#grid .cell {
   color: #fff;
   display: flex;
   justify-content: center;
@@ -25,13 +24,11 @@
 }
 
 @media screen and (max-width: 450px) {
-  
-  :root{
+  :root {
     --cell-size: 12vh;
   }
 
-  #grid .cell{
+  #grid .cell {
     font-size: 6rem;
   }
-  
-}
+}/*# sourceMappingURL=style.css.map */
