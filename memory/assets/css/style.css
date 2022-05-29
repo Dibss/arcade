@@ -20,4 +20,28 @@
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+}
+#grid .bomb {
+  background-image: url("../img/bomb.jpg");
+}
+#grid .bone {
+  background-image: url("../img/bone.jpg");
+}
+#grid .dinosaur {
+  background-image: url("../img/dinosaur.jpg");
+}
+#grid .heart {
+  background-image: url("../img/heart.jpg");
+}
+#grid .gamepad {
+  background-image: url("../img/gamepad.jpg");
+}
+#grid .shoes {
+  background-image: url("../img/shoes.jpg");
+}
+#grid .star {
+  background-image: url("../img/star.jpg");
+}
+#grid .sunglasses {
+  background-image: url("../img/sunglasses.jpg");
 }/*# sourceMappingURL=style.css.map */
