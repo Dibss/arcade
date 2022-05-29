@@ -45,3 +45,11 @@
     background-image: url('../img/sunglasses.jpg');
   }
 }
+
+@media screen and (max-width: 450px) {
+  
+  :root{
+    --cell-size: 10vh;
+  }
+  
+}
