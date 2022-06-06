@@ -92,6 +92,7 @@ nav ul {
   padding: 0.5em 0.8em;
   font-weight: 700;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 .board .game-data div p {
   margin-top: 0.5em;
