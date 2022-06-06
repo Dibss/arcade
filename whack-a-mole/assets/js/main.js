@@ -44,8 +44,10 @@ start.addEventListener('click', function(){
   }, 1000);
 })
 
-// const restart = document.querySelector('#restart');
-// restart = restart.addEventListener('click', window.location.reload());
+const restart = document.querySelector('#restart');
+restart = restart.addEventListener('click', function(){
+  window.location.reload();
+});
 
 function randomAnt(){
   removeAnt();
