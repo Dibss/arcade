@@ -1,5 +1,5 @@
 const timeSpan = document.querySelector('#timer');
-let time = 0;
+let time = 5;
 timeSpan.innerText = time;
 
 const scoreSpan = document.querySelector('#score');
@@ -20,7 +20,7 @@ function randomAnt(){
 function removeAnt(){
   for (let i = 0; i < cells.length; i++) {
     const cell = cells[i];
-    cell.classList.remove('ant')
+    cell.classList.remove('ant');
   }
 }
 
@@ -30,19 +30,26 @@ for (let i = 0; i < cells.length; i++) {
   const cell = cells[i];
   cell.addEventListener('click', function(){
     if(cell.classList.contains('ant')) {
-      cell.classList.add('splat');
       score++;
       scoreSpan.innerText = score;
-      setTimeout(removeSplat, 300);
+
+      cell.classList.remove('ant');
+      cell.classList.add('splat');
+
+      setTimeout(function(){
+        cell.classList.remove('splat');
+      }, 200);
     }
   })
 }
 
-function removeSplat(){
-  for (let i = 0; i < cells.length; i++) {
-    const cell = cells[i];
-    cell.classList.remove('splat')
+const timer = setInterval(function(){
+  time--;
+  timeSpan.innerText = time;
+  if(time == 0){
+    clearInterval(timer);
+    clearInterval(movement);
+    removeAnt();
+    winLose('Tempo scaduto!');
   }
-}
-
-
+}, 1000);
