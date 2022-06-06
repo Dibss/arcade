@@ -4,15 +4,27 @@
 }
 
 #grid{
-  height: calc(var(--road-size) * 2);
+  height: calc(var(--road-size) * 1.6);
   width: calc(var(--road-size) * 10);
   display: flex;
   align-items: flex-end;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
   div{
     height: var(--cell-size);
     width: var(--cell-size);
-    border: 1px solid white;
+  }
+  .ghost{
+    background-image: url('../img/ghost2.png');
+    background-position: 0px 1em;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .rock{
+    background-image: url('../img/rock.png');
+    background-position: 0px 1.5em;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
