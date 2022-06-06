@@ -20,6 +20,7 @@
   background-position: 0px 1em;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform linear 0.3s;
 }
 #grid .rock {
   background-image: url("../img/rock.png");
@@ -27,9 +28,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#grid .ghostUp {
+  transform: translate(0, -8vw);
+}
 
 @media screen and (max-width: 450px) {
   :root {
-    --road-size: 10vh;
+    --road-size: 7vw;
+    --cell-size: 7vw;
   }
 }/*# sourceMappingURL=style.css.map */
