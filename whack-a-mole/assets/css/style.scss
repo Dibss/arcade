@@ -10,16 +10,21 @@
   height: calc((var(--cell-size) + var(--cell-gutter)) * 3);
   align-content: space-between;
   justify-content: space-between;
-  cursor: pointer;
   .cell{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 9rem;
+    cursor: pointer;
     height: var(--cell-size);
     width: var(--cell-size);
     border: 3px solid #fff;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .ant{
+    background-image: url('../img/ant.png');
+  }
+  .splat{
+    background-image: url('../img/splat.png');
   }
 }
 
