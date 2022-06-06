@@ -1,0 +1,25 @@
+:root{
+  --road-size: 8vw;
+  --cell-size: 8vw;
+}
+
+#grid{
+  height: calc(var(--road-size) * 2);
+  width: calc(var(--road-size) * 10);
+  display: flex;
+  align-items: flex-end;
+  border: 2px solid white;
+  div{
+    height: var(--cell-size);
+    width: var(--cell-size);
+    border: 1px solid white;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  
+  :root{
+    --road-size: 10vh;
+  }
+  
+}
