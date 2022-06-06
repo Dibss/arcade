@@ -81,6 +81,14 @@ nav ul {
   margin: 1em 0;
   text-align: center;
 }
+.board .game-data div {
+  margin: 1em 0;
+}
+.board .game-data div p {
+  margin-top: 0.5em;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
 .board .game-alert {
   text-align: center;
   margin: 1em 0;
