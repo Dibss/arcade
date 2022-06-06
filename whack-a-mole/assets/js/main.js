@@ -53,9 +53,9 @@ function randomAnt(){
   const cell = cells[randNum];
   cell.classList.add('ant');
   if(score == 15){
-    speed = 700;
-  } else if(score == 20){
     speed = 600;
+  } else if(score == 20){
+    speed = 500;
   }
 }
 
