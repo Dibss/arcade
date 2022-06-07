@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 450px) {
   :root {
-    --road-size: 7vw;
-    --cell-size: 7vw;
+    --road-size: 9vw;
+    --cell-size: 12vw;
   }
 }/*# sourceMappingURL=style.css.map */
