@@ -16,6 +16,19 @@ function addRock(){
   road[rockIdx].classList.add('rock');
 
   const rockMovement = setInterval(function(){
+    score++;
+    scoreSpan.innerHTML = score;
+
+    if(score == 15){
+      rockSpeed = 250;
+    } else if(score == 30){
+      rockSpeed = 200;
+    } else if(score == 40){
+      rockSpeed = 150;
+    } else if(score == 60){
+      rockSpeed = 100;
+    }
+    
     road[rockIdx].classList.remove('rock');
     rockIdx--;
     
@@ -31,20 +44,8 @@ function addRock(){
       road[ghostIdx].classList.remove('ghost');
       road[ghostIdx].classList.add('rock');
     } else if(rockIdx === ghostIdx && road[ghostIdx].classList.contains('ghostUp')){
-      score++;
-      scoreSpan.innerHTML = score;
-      if(score == 3){
-        rockSpeed = 250;
-      } else if(score == 6){
-        rockSpeed = 200;
-      } else if(score == 15){
-        rockSpeed = 150;
-      } else if(score == 30){
-        rockSpeed = 100;
-      }
     }
     
-
     road[rockIdx].classList.add('rock');
 
   }, rockSpeed)
