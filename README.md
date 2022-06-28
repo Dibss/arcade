@@ -1,6 +1,6 @@
 # Games demo
 
-https://dibss.github.io/arcade/
+https://dibss.github.io/retro-games/
 
 1. Tris
 2. Memory
